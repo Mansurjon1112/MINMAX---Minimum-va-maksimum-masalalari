@@ -193,17 +193,17 @@ else:
 
 n=int(input('n='))
 kichik = 0
-for i in range(1,n+1):
+i=0
+sanoq=0
+while sanoq<n:
     a = int(input())
-    if (i==1) and (a>0) :
-        kichik = a    
-    else: 
-        kichik = 0
-    
-    if (kichik > a) and (a>0):
-            kichik = a  
-    
-if kichik > 0 :            
-    print(kichik)  
-else: 
-    print(0)    
+    if a>0 :
+        i+=1
+
+    if i>=1 and a>0 :
+        kichik = a
+        if kichik > a:
+            kichik = a
+    sanoq+=1
+
+print(kichik)
