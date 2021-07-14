@@ -201,7 +201,8 @@ while sanoq<n:
         i+=1
 
     if i>=1 and a>0 :
-        kichik = a
+        if i==1:
+            kichik = a
         if kichik > a:
             kichik = a
     sanoq+=1
